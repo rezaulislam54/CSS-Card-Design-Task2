@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        *{  margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #EFEFEF;
+        }
+        .image-content{
+            position: relative;
+            row-gap: 5px;
+        }
+        .overlay{
+            position: absolute;
+            left: 0;
+            top : 0;
+            height: 100%;
+            width: 100%;
+            background-color: #4070F4;
+            border-radius: 25px 25px 0 25px;
+        }
+
+        .card{
+            width: 300px;
+            border-radius: 25px;
+            background-color: #fff;
+            box-shadow: 8px 5px 8px 7px aqua 0.66;
+            
+
+        }
+        .image-content,
+        .card-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 14px;
+        }
+        .card-image{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 3px;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid#4070F4;
+        }
+        .name{
+            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: 500;
+            color: #333;
+        }
+        .description{
+            font-size: 14px;
+            color: #707070;
+            text-align: center;
+        }
+        .button{
+            border: none;
+            font-size: 16px;
+            color: #fff;
+            padding: 8px 16px;
+            background-color: #4070F4;
+            border-radius: 6px;
+            margin: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover{
+            background-color: hwb(3 9% 29%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+                <img src="image (2).png" alt="">
+            </div>
+        </div>
+        <div class="card-content">
+            <h2 class="name">Rezaul Islam</h2>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias accusantium possimus corporis aperiam accusamus a rerum totam est reprehenderit vel cum! Tempore officiis.</p>
+
+            <button class="button"> View More</button>
+        </div>
+    </div>
+</body>
+</html>
